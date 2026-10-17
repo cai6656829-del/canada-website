@@ -1,0 +1,295 @@
+.home-products-section{
+  padding: 60px 0px;
+  background-color: #f5f5f7;
+}
+.home-product-list {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-col-box {
+  /* width: 25%;
+  flex: auto; */
+  border-radius: 0;
+  overflow: hidden;
+  border: none;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 1px 2px 4px #00000030; */
+}
+.prod-box-image-sec{
+  overflow: hidden;
+}
+
+.product-col-box .prod-box-image-sec img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.product-col-box:hover {
+  border: none;
+}
+
+.product-box-content-sec {
+  padding: 15px 15px;
+  transition: all 0.5s ease;
+  background: #BF2932;
+  text-align: center;
+  flex: 1 1 auto;
+}
+.pro-cnt-box-rd{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.pro-cnt-box-rd .product-box-content-sec{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.pro-cnt-box-rd .product-box-btn{
+  width: max-content;
+  margin: 0 auto;
+}
+.product-col-box:hover .prod-box-image-sec img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.prod-box-cate-txt{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: normal;
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  }
+.prod-box-cate-des {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  /* margin-bottom: 8px; */
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* min-height: 48px; */
+}
+
+
+/* Pagination */
+
+.product-col-box, 
+.product-col-box *,
+.apple-card,
+.apple-card * {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Apple Style Product Card */
+.product-col-box.apple-card {
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 520px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.product-col-box.apple-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.apple-card .prod-box-image-sec {
+  width: 100%;
+  margin-bottom: 20px;
+  background: transparent;
+  flex: 0 0 auto;
+}
+
+.apple-card .prod-box-image-sec img {
+  max-height: 220px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.apple-card .product-box-content-sec {
+  background: transparent;
+  padding: 0;
+  color: #1d1d1f;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.apple-card .card-badge {
+  display: block;
+  color: #bf2932;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.apple-card .prod-box-cate-txt {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+  line-height: 1.2;
+  flex: 0 0 auto;
+}
+
+.apple-card .card-subtitle {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+  flex: 0 0 auto;
+}
+
+.apple-card .card-price {
+  font-size: 14px;
+  color: #6e6e73;
+  margin-bottom: 15px;
+  flex: 1 1 auto;
+}
+
+.apple-card .card-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.apple-card .btn-red-pill {
+  background-color: #bf2932;
+  color: #fff !important;
+  border-radius: 980px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.apple-card .btn-red-pill:hover {
+  background-color: #a3222b;
+}
+
+.apple-card .btn-link-red {
+  color: #bf2932 !important;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.apple-card .btn-link-red:hover {
+  text-decoration: underline;
+}
+
+.apple-card .color-swatches {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.apple-card .swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.apple-card .swatch.active {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #bf2932;
+}
+
+.pagination.layout-paginator {
+  display: table;
+  margin: 50px auto 35px;
+  clear: both;
+  font-size: 14px;
+}
+
+.pagination.layout-paginator li.pager-nav {
+  list-style-type: none;
+  display: inline-block;
+  padding: 4px;
+}
+
+.pagination.layout-paginator li.pager-nav.active a {
+  display: inline-block;
+  background-color: #BF2932;
+  padding: 4px 8px;
+  color: #fff;
+}
+
+.pagination.layout-paginator li.pager-nav a {
+  background-color: #701e6d12;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  min-height: 27px;
+  display: block;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+}
+
+.pagination.layout-paginator li.pager-nav a:hover {
+  background-color: #BF2932;
+  color: #fff;
+}
+
+.pagination.layout-paginator li.pager-nav a:hover .ir-chevron-right {
+  filter: brightness(0) invert(1);
+}
+
+.pager-nav a .ir.ir-chevron-right {
+  background: url(../../../images/icon-pagination.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 17px;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.pager-nav a .ir.ir-chevron-right.ir-previous {
+  transform: rotate(180deg);
+}
+
+/* Pagination */

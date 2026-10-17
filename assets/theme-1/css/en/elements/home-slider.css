@@ -1,0 +1,264 @@
+/*------------------------------ Slider Section Start -----------------------------------------*/
+
+.slider-sec {
+  max-width: 100%;
+  width: 100%;
+  margin: 0px auto 0px;
+  height: 640px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 轮播切换时的 3D 粒子层 */
+.particle-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* 粒子层之上保留左右箭头 */
+.slider-sec .swiper-button-next,
+.slider-sec .swiper-button-prev,
+.slider-mob .swiper-button-next,
+.slider-mob .swiper-button-prev {
+  z-index: 4;
+}
+
+.slider-mob img {
+  width: 100%;
+}
+
+.slider-mob .slider-btn img {
+  width: 14px;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  overflow: hidden;
+}
+
+.slider-sec .lSAction {
+  display: none !important;
+}
+
+.slider-sec .lSSlideOuter .lSPager.lSpg > li a {
+  height: 15px;
+  width: 15px;
+  background: #fff;
+}
+
+.slider-sec .lSSlideOuter .lSPager.lSpg > li.active a,
+.slider-sec .lSSlideOuter .lSPager.lSpg > li:hover a {
+  background: #000000;
+}
+
+ul.lSPager.lSpg {
+  position: relative;
+  top: -60px;
+}
+
+.slider-mob {
+  width: 100%;
+  float: left;
+}
+
+/* .slider-mob .swiper-slide-active {
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+} */
+
+.slider-mob .lSAction {
+  display: none !important;
+}
+
+.slider-mob .lSSlideOuter .lSPager.lSpg > li a {
+  height: 15px;
+  width: 15px;
+  background: #fff;
+}
+
+.slider-mob .lSSlideOuter .lSPager.lSpg > li.active a,
+.slider-mob .lSSlideOuter .lSPager.lSpg > li:hover a {
+  background: #000000;
+}
+
+.slider-mob .item img {
+  width: 100%;
+}
+
+.slider-mob {
+  display: none;
+}
+
+.slider-sec .swiper-button-next,
+.slider-sec .swiper-button-prev {
+  color: #BF2932;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.featured-prod .swiper-button-next,
+.featured-prod .swiper-button-prev {
+  color: #ababab;
+  width: 50px;
+  height: 50px;
+  border: none !important;
+  border-radius: 0%;
+  top: 0%;
+  transform: translateY(-50%);
+}
+
+.featured-prod .swiper-button-next::after,
+.featured-prod .swiper-button-prev::after {
+  font-size: 20px;
+}
+
+.featured-prod .swiper-button-next {
+  right: 0%;
+}
+
+.featured-prod .swiper-button-prev {
+  right: 2%;
+  left: inherit !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+    padding: 0px 0px;
+    width: 36px !important;
+    height: 8px;
+    border-radius: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #ffffff50;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  padding: 14px;
+}
+
+.latest-sec .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: -15px;
+  right: auto;
+}
+
+.latest-sec .swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: -15px;
+  left: auto;
+}
+
+.slider-logo {
+  background: transparent;
+}
+
+.slider-title {
+  bottom: 0;
+  z-index: 10;
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+  margin: 0px; 
+  width: 460px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.33);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.slider-title h2 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  padding: 4px 0px 0px 0px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62px; 
+  text-transform: capitalize;
+}
+
+.slider-title p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 18px;
+  color: #FFFFFF;
+
+
+}
+
+.slider-title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.slider-title {
+  animation: reveal 9s infinite;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.slider-sec .swiper-button-next { 
+  margin-top: 0;
+  z-index: 4;
+  cursor: pointer;
+  outline: none;
+  right: 50px;
+  border-radius: 0%;
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border: 1px solid #FFFFFF;
+  border-radius: 37px;
+}
+.slider-sec .swiper-button-prev {
+  background: #fff;
+  border: 1px solid #FFFFFF;
+  width: 36px;
+  height: 36px;
+  margin-top: 0;
+  z-index: 4;
+  cursor: pointer;
+  outline: none;
+  left: 50px;
+  border-radius: 37px;
+}
+
+.slider-sec .swiper-button-next:hover,
+.slider-sec .swiper-button-prev:hover{
+  background: rgba(0, 0, 0, 0.80);
+}
+
+/*------------------------------ Slider Section End -----------------------------------------*/
